@@ -29,3 +29,5 @@ test('this test should do math', (expect) => {
     expect.equal(actual1, expected1, '12 true = 12 true');
     expect.equal(actual, expected, 'true = true');
 });
+
+test('testing merging issues');
