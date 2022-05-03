@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { myFunction } from '../functions.js';
+import { multiplyBySeven, myFunction } from '../functions.js';
 
 const { test, skip } = QUnit;
 
@@ -17,4 +17,12 @@ skip('this test should be skipped', (expect) => {
     const actual = true;
 
     expect.equal(actual, expected);
+});
+
+test('this test should do math', (expect) => {
+    const expected = 21;
+
+    const actual = multiplyBySeven(3);
+    
+    expect.equal(actual, expected, 'true = true');
 });
