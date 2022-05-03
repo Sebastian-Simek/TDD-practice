@@ -4,9 +4,9 @@ import { myFunction } from '../functions.js';
 const { test, skip } = QUnit;
 
 test('this test should pass', (expect) => {
-    const expected = true;
+    const expected = `Bunny rabbit!!!`;
 
-    const actual = myFunction();
+    const actual = myFunction('Bunny rabbit');
 
     expect.equal(actual, expected, 'true = true');
 });
