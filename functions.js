@@ -1,5 +1,5 @@
 export function myFunction(booger) {
-    return `${booger}!!!`;
+    return `${booger}!!!`;;
 }
 // This function should take a string and add return an new string that adds three exclamation points to the argument.
 /* 
@@ -112,7 +112,7 @@ Output:
 */
 
 export function makeLuckyGreeting(firstNumber, secondNumber) {
-    return true;
+    return `Hello! Your lucky number for the day is ${firstNumber + secondNumber}`;
 }
 
 // This function should take an array and return the second item in the array

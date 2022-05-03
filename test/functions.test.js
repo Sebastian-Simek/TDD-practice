@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { divideThenMultiply, multiplyBy12ThenHalve, multiplyBySeven, myFunction, returnAsAnArray, returnAsAString } from '../functions.js';
+import { divideThenMultiply, makeLuckyGreeting, multiplyBy12ThenHalve, multiplyBySeven, myFunction, returnAsAnArray, returnAsAString } from '../functions.js';
 
 const { test, skip } = QUnit;
 
@@ -43,9 +43,12 @@ test('this test should do strings and arrays', (expect) => {
 
 test('this test should return a string.', (expect) => {
     const expected = '123';
+    const expected1 = 'Hello! Your lucky number for the day is 12';
 
     const actual = returnAsAString(1, 2, 3);
+    const actual1 = makeLuckyGreeting(6, 6);
 
+    expect.equal(actual1, expected1, 'lucky = lucky');
     expect.equal(actual, expected, 'true = true');
 });
 
